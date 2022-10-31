@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do</title>
     <link href="/src/scss/main.scss" rel="stylesheet" />
+    <!-- Script, change placement if needed(?)-->
+    <script src="/src/js/main.js"></script>
   </head>
   <body>
     <header class="myheader">
@@ -17,6 +19,7 @@
         <!-- First section for adding a task-->
         <h3>ADD NEW TASK</h3>
         <form id="taskForm">
+          <input id="taskDate" type="date" required />
           <label for="taskInput"></label>
           <input id="taskInput" type="text" required />
           <!-- Create button submit event for js function for the form! -->
@@ -27,14 +30,14 @@
         <!-- Second section for active tasks, create js for ul -->
         <h3>MY TASKS</h3>
         <div>
-          <ul id="taskList"></ul>
+          <ul id="taskListCurrent"></ul>
         </div>
       </section>
       <section>
         <!-- Third section with completed tasks, create js for ul -->
         <h3>COMPLETED TASKS</h3>
         <div>
-          <ul id="completedList"></ul>
+          <ul id="completedTask"></ul>
         </div>
       </section>
     </main>
