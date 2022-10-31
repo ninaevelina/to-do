@@ -3,10 +3,37 @@
 body, html {
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.header {
+.myheader {
     font-family: 'Play', sans-serif;
     text-transform: uppercase;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__first {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__second {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+.container {
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

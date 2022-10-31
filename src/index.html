@@ -9,33 +9,33 @@
   </head>
   <body>
     <header class="myheader">
-      <h1 class="header__first"></h1>
-      <h2 class="header__second"></h2>
+      <h1 class="myheader__first">Procrastinating, much?</h1>
+      <h2 class="myheader__second">Let's get some stuff done.</h2>
     </header>
     <main class="container">
       <section>
         <!-- First section for adding a task-->
-        <h3></h3>
-        <label></label>
-        <input type="text" />
-        <button></button>
+        <h3>ADD NEW TASK</h3>
+        <form id="taskForm">
+          <label for="taskInput"></label>
+          <input id="taskInput" type="text" required />
+          <!-- Create button submit event for js function for the form! -->
+          <button id="addBtn">+</button>
+        </form>
       </section>
       <section>
-        <!-- Second section for active tasks that have two buttons each, tasks can be edited or deleted-->
-        <h3></h3>
-        <ul>
-          <li><label></label><input /><button></button><button></button></li>
-          <li><label></label><input /><button></button><button></button></li>
-          <li><label></label><input /><button></button><button></button></li>
-          <li><label></label><input /><button></button><button></button></li>
-        </ul>
+        <!-- Second section for active tasks, create js for ul -->
+        <h3>MY TASKS</h3>
+        <div>
+          <ul id="taskList"></ul>
+        </div>
       </section>
       <section>
-        <!-- Third section with completed tasks, input type should be checkbox-->
-        <h3></h3>
-        <ul>
-          <li><label></label><input /><button></button><button></button></li>
-        </ul>
+        <!-- Third section with completed tasks, create js for ul -->
+        <h3>COMPLETED TASKS</h3>
+        <div>
+          <ul id="completedList"></ul>
+        </div>
       </section>
     </main>
     <footer></footer>
