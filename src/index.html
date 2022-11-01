@@ -7,7 +7,7 @@
     <title>To-do</title>
     <link href="/src/scss/main.scss" rel="stylesheet" />
     <!-- Script, change placement if needed(?)-->
-    <script src="/src/js/main.js"></script>
+    <script defer src="/src/js/main.js"></script>
   </head>
   <body>
     <header class="myheader">
@@ -18,12 +18,11 @@
       <section>
         <!-- First section for adding a task-->
         <h3>ADD NEW TASK</h3>
-        <form id="taskForm">
+        <form id="myTaskForm">
           <input id="taskDate" type="date" required />
-          <label for="taskInput"></label>
           <input id="taskInput" type="text" required />
           <!-- Create button submit event for js function for the form! -->
-          <button id="addBtn">+</button>
+          <button id="addBtn" type="submit">+</button>
         </form>
       </section>
       <section>
