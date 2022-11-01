@@ -63,6 +63,8 @@ function updateMyCurrentTasks() {
   }
 }
 
+// loop not functioning properly, the li-items are displayed and then disappear -  add fix
+
 // Todo - create list for the form, input, current tasks and completed
 
 // Function
