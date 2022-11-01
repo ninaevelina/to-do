@@ -63,6 +63,7 @@ function updateMyCurrentTasks() {
   }
 }
 
+// to do --> create buttons or icons to remove li!!!!!!
 // loop not functioning properly, the li-items are displayed and then disappear -  add fix
 
 // Todo - create list for the form, input, current tasks and completed

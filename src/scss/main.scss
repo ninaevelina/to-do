@@ -13,6 +13,8 @@ body, html {
     font-family: 'Play', sans-serif;
     text-transform: uppercase;
     width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -37,4 +39,8 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__header {
+        text-align: center;
+    }
 }
