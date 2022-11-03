@@ -32,19 +32,19 @@ taskForm.addEventListener("submit", addTask); // add eventlistener for the form,
 
 function addTask(e) {
   // e is object which contains information about the event
+  e.preventDefault(); // prevent from submitting the form, so the values instead are looped in li down below and not shown in the url querystring
 
   let newTask = new Task(); // let the user input go from the class "Task"
   newTask.date = taskDate.value; // let the new task-input get the date value
   newTask.taskdetails = taskInput.value; // let the new task-input get the taskdetails-value
   taskToDoList.push(newTask); // the newtask from the user input is pushed to the array
+  localStorage.setItem("taskToDoList", JSON.stringify(taskToDoList));
   console.log(taskToDoList); // check console-log to see the pushed new tasks
 
   taskDate.value = ""; // let user decide the date value
   taskInput.value = ""; // let the user typ in the task details
 
   updateMyCurrentTasks(); // nested function, function shown down below
-
-  e.preventDefault(); // prevent from submitting the form, so the values instead are looped in li down below and not shown in the url querystring
 }
 
 //addTask();
@@ -61,6 +61,7 @@ function updateMyCurrentTasks() {
     let taskSetDetails = document.createElement("p"); // create another p tag for the details that user typed in the text input
     taskSetDetails.innerHTML += myList.taskdetails + "";
     let checkBoxInput = document.createElement("input");
+    checkBoxInput.className = "theCheckbox";
     checkBoxInput.type = "checkbox";
     checkBoxInput.checked = myList.isCompleted;
     checkBoxInput.addEventListener("change", () => {
@@ -86,4 +87,20 @@ function moveTaskToCompletedList(myTask) {
   updateMyCurrentTasks();
 }
 
+//localStorage.setItem("taskToDoList", JSON.stringify(taskToDoList));
+
+//updateMyCurrentTasks(() => {
+//  taskToDoList.push(myTask[5]);
+//localStorage.setItem("taskToDoList", JSON.stringify(taskToDoList));
+//});
 // låt list items stanna kvar vid refresh
+
+//function saveNewArrayObjectsToLocalStorage(myTask) {
+//  taskToDoList.push(myTask);
+// localStorage.setItem("myAddedTask", JSON.stringify(myTask));
+//}
+
+//saveNewArrayObjectsToLocalStorage();
+window.onload = function () {
+  localStorage.getItem("taskToDoList", JSON.stringify(taskToDoList));
+};

@@ -34,6 +34,26 @@ body, html {
     }
 }
 
+#taskDate {
+    height: 25px;
+    font-family: 'Play', sans-serif;
+}
+
+#taskInput {
+    height: 25px;
+    font-family: 'Play', sans-serif;
+}
+
+#addBtn {
+    height: 25px;
+    font-family: 'Play', sans-serif;
+    border-radius: 50%;
+}
+
+.theCheckbox {
+    border: 10px solid black;
+}
+
 .container {
     font-family: 'Play', sans-serif;
     text-transform: uppercase;
