@@ -1,3 +1,5 @@
+import { Task } from "./models/task";
+
 // Variables
 
 let taskToDoList = [];
@@ -16,7 +18,6 @@ class Task {
     this.date = date;
     this.taskdetails = taskdetails;
     this.isCompleted = false;
-    //lägg till en funktion för om task är completed true/false
   }
 }
 
