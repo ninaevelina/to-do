@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+// Input
+
+@mixin myInputs {
+    height: 25px;
+    font-family: 'Play', sans-serif;
+    justify-content: space-around;
+}

@@ -25,7 +25,7 @@ class Task {
 let portfolio = new Task("2022-11-05", "Update portfolio");
 let coffee = new Task("2022-11-06", "Buy a coffee-thermos");
 let drive = new Task("2024-01-01", "Get your driver's license");
-let learn = new Task("2022-11-04", "Learn how to nest functions");
+let learn = new Task("2022-11-04", "Learn functions");
 //change this var below
 
 taskForm.addEventListener("submit", addTask); // add eventlistener for the form, when user input is submitted in the form, call the function (which entails to add task to "my current tasks")
@@ -47,8 +47,6 @@ function addTask(e) {
   updateMyCurrentTasks(); // nested function, function shown down below
 }
 
-//addTask();
-
 function updateMyCurrentTasks() {
   currentTask.innerHTML = ""; // let the innerHTML be empty for the #taskListCurrent UL before the li are created in the loop
   taskComplete.innerHTML = ""; // let the innerHTML be empty/cleared for the #completedTask UL before the li are created in the loop, to stop them from displaying x100 times
@@ -57,9 +55,9 @@ function updateMyCurrentTasks() {
     let myList = taskToDoList[i]; // set position that the loop should start from
     let createdTask = document.createElement("li"); // a created task creates a li-element
     let taskSetDate = document.createElement("p"); // create a p tag for the date that user chose from input
-    taskSetDate.innerHTML += myList.date + "";
+    taskSetDate.innerHTML += myList.date + " ";
     let taskSetDetails = document.createElement("p"); // create another p tag for the details that user typed in the text input
-    taskSetDetails.innerHTML += myList.taskdetails + "";
+    taskSetDetails.innerHTML += " " + myList.taskdetails + "";
     let checkBoxInput = document.createElement("input");
     checkBoxInput.className = "theCheckbox";
     checkBoxInput.type = "checkbox";
