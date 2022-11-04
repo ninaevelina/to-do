@@ -94,7 +94,6 @@ function moveTaskToCompletedList(myTask) {
 //  taskToDoList.push(myTask[5]);
 //localStorage.setItem("taskToDoList", JSON.stringify(taskToDoList));
 //});
-// låt list items stanna kvar vid refresh
 
 //function saveNewArrayObjectsToLocalStorage(myTask) {
 //  taskToDoList.push(myTask);
