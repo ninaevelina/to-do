@@ -1,5 +1,9 @@
 import { Task } from "./models/task";
 
+window.onload = function () {
+  localStorage.getItem("taskToDoList", JSON.stringify(taskToDoList));
+};
+
 // Variables
 
 let taskToDoList = [];
@@ -100,6 +104,11 @@ function moveTaskToCompletedList(myTask) {
 //}
 
 //saveNewArrayObjectsToLocalStorage();
+/*window.onload = function () {
+  localStorage.getItem("taskToDoList", JSON.stringify(taskToDoList));
+};*/
+/*
 window.onload = function () {
   localStorage.getItem("taskToDoList", JSON.stringify(taskToDoList));
-};
+  return new Task(taskToDoList);
+};*/
