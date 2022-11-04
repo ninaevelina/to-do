@@ -1,6 +1,6 @@
 import { Task } from "./models/task";
 
-// Add fix for window-onload function to get local storage items, commented-out functions from line 90
+// Add fix for window-onload function to get local storage items
 
 // Variables
 
@@ -86,32 +86,3 @@ function moveTaskToCompletedList(myTask) {
   myTask.isCompleted = !myTask.isCompleted;
   updateMyCurrentTasks();
 }
-
-// Out-commented localstorage set/get --> down below
-//localStorage.setItem("taskToDoList", JSON.stringify(taskToDoList));
-
-//updateMyCurrentTasks(() => {
-//  taskToDoList.push(myTask[5]);
-//localStorage.setItem("taskToDoList", JSON.stringify(taskToDoList));
-//});
-
-//function saveNewArrayObjectsToLocalStorage(myTask) {
-//  taskToDoList.push(myTask);
-// localStorage.setItem("myAddedTask", JSON.stringify(myTask));
-//}
-
-//saveNewArrayObjectsToLocalStorage();
-/*window.onload = function () {
-  localStorage.getItem("taskToDoList", JSON.stringify(taskToDoList));
-};*/
-/*
-window.onload = function () {
-  localStorage.getItem("taskToDoList", JSON.stringify(taskToDoList));
-  return new Task(taskToDoList);
-};*/
-
-//window.onload = function () {
-// localStorage.getItem(taskToDoList);
-//JSON.parse(localStorage.getItem(taskToDoList));
-//console.log(taskToDoList);
-//};
