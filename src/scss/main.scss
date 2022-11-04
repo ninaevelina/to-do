@@ -9,7 +9,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   background-color: #f5f5f5;
+    background-color: #a9c648;
 }
 
 .myheader {
@@ -21,8 +21,6 @@ body, html {
     height: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 5px solid #76cf76;
-    border-bottom-style:dashed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,6 +42,7 @@ body, html {
     font-family: 'Play', sans-serif;
     text-transform: uppercase;
     width: 100vw;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +121,7 @@ footer {
     background-color: black;
     color: #f5f5f5;
     border-top: 5px solid;
-    border-color: #76cf76;
+    border-color: #a9c648;
 }
 
 
